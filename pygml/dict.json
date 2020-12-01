@@ -1,0 +1,21 @@
+{
+	"rawData": [{
+		"array0": [
+			"oAction",
+			"oAlert"
+		],
+		"array1": [
+			"oTester",
+			"oFlags"
+		]
+	}],
+	"varDeclarations": [
+		"Vec3f", "Vec3s", "Mat4",
+		"s8", "s16", "s32",
+		"u8", "u16", "u32",
+		"f8", "f16", "f32"
+	],
+	"keywordLowercase": [
+		"null", "true", "false"
+	]
+}
