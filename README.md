@@ -2,6 +2,8 @@
 
 ⚠️ Nothing to see here yet... come back in ~mid-December 2020.
 
+___
+
 SM64.gml is a WIP port of Super Mario 64 to YoYoGames' GameMaker Studio 2 development engine. This project is not affiliated with them.
 
 This repo does not contain any Nintendo assets and WILL NOT COMPILE without the [sm64 decomp repo](https://github.com/n64decomp/sm64)
