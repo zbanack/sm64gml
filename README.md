@@ -3,7 +3,9 @@ SM64.gml is a WIP port of Super Mario 64 to YoYoGames' GameMaker Studio 2 develo
 
 This repo does not contain any Nintendo assets and WILL NOT COMPILE without the [sm64 decomp repo](https://github.com/n64decomp/sm64)
 
-![BiTDW test](https://video.twimg.com/tweet_video/EjHb1_5XkAM4StG.mp4)
+[Video 1, BiTDW](https://twitter.com/zackbanack/status/1311071508912107523)
+[Video 2, Castle Lobby](https://twitter.com/zackbanack/status/1312137282103603201)
+
 
 ## Setup
 1. Get a working copy of the [sm64 decomp repo](https://github.com/n64decomp/sm64).
