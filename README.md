@@ -6,7 +6,7 @@ ___
 ## The project
 sm64.gml is an early(-ish) **work in progress** port of Super Mario 64 to 100% vanilla GameMaker Language (GML) 2.3.1. GML is a part of YoYoGames' GameMaker Studio 2 development engine. This project is in not affiliated with them in any way.
 
-The C code that's being ported to GML comes from the [C decompilation repo](https://github.com/n64decomp/sm64). Certain portions of the GML also derive from [https://github.com/sm64js/sm64jssm64js], a native JavaScript port of the game. **Zero (0%)** of GML in this project stemmed from leaks or illegally-obtained Super Mario 64 or related systems code. 
+The C code that's being ported to GML comes from the [C decompilation repo](https://github.com/n64decomp/sm64). Certain portions of the GML also derive from [https://github.com/sm64js/sm64js](sm64js), a native JavaScript port of the game. **Zero (0%)** of GML in this project stemmed from leaks or illegally-obtained Super Mario 64 or related systems code. 
 
 This project exists becauses of curisosity, a love for GameMaker, and the challenge of working under restrictions.
 
@@ -54,4 +54,6 @@ Copy decomp-derived C code to your clipboard, run the script, and the script wil
 - [Super Mario 64 Decomp](https://github.com/n64decomp/sm64)
  - The smart people that painstakingly turned Super Mario 64's assembly to C
 - [sm64js](https://github.com/sm64js/sm64js)
+ - The native JavaScript port of Super Mario 64. Their code was referenced on numerous occasions when brick walls were hit
 - [N64 Fast 3D Renderer](https://github.com/Emill/n64-fast3d-engine)
+ - Portions of this OpenGL implemention of Nintendo 64's graphics renderer were ported to GML for use in this project
