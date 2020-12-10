@@ -4,7 +4,6 @@ ___
 ___
 
 ## The project
-___
 sm64.gml is an early(-ish) **work in progress** port of Super Mario 64 to 100% vanilla GameMaker Language (GML) 2.3.1. GML is a part of YoYoGames' GameMaker Studio 2 development engine. This project is in not affiliated with them in any way.
 
 The C code that's being ported to GML comes from the [C decompilation repo](https://github.com/n64decomp/sm64). Certain portions of the GML also derive from [https://github.com/sm64js/sm64jssm64js], a native JavaScript port of the game.
@@ -12,15 +11,12 @@ The C code that's being ported to GML comes from the [C decompilation repo](http
 This project exists becauses of curisosity, a love for GameMaker, and the challenge of working under restrictions.
 
 ## Notice
-___
 This repo does not contain any Super Mario 64 textures or sounds. A self-provided ROM, as well as a copy of the [sm64 decomp](https://github.com/n64decomp/sm64), is necessary in order to extract assets and play.
 
 ### Community
-___
 [Join the Discord](https://discord.gg/6XfpZXt)
 
 ## Compile Instructions (Windows, macOS)
-___
 1. Install the latest version of GameMaker Studio 2.3.1
 2. Follow the **US ROM VERSION** of the steps found on the [sm64 decomp repo](https://github.com/n64decomp/sm64)
 3. Clone the sm64.gml repo:
@@ -41,8 +37,6 @@ sm64_init(
 
 
 ## Python C->GML conversion tools
-___
-
 In order to speed up the process of converting C code to GML, this repo contains numerous python scripts in the /pygml/ folder. Regarding these scripts, please note the following:
 - The code extremely sloppy and full of spaghetti
 - The code works ~75% of the time, requiring manual changes
