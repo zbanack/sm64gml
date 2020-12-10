@@ -1,47 +1,63 @@
 # sm64.gml
-
+___
 **⚠️ Nothing to see here yet... come back in ~mid-December**
-
 ___
 
-SM64.gml is a WIP port of Super Mario 64 to YoYoGames' GameMaker Studio 2 development engine. This project is not affiliated with them.
+## The project
+___
+sm64.gml is an early(-ish) **work in progress** port of Super Mario 64 to 100% vanilla GameMaker Language (GML) 2.3.1. GML is a part of YoYoGames' GameMaker Studio 2 development engine. This project is in not affiliated with them in any way.
 
-This repo does not contain any Nintendo assets and WILL NOT COMPILE without the [sm64 decomp repo](https://github.com/n64decomp/sm64)
+The C code that's being ported to GML comes from the [C decompilation repo](https://github.com/n64decomp/sm64). Certain portions of the GML also derive from [https://github.com/sm64js/sm64jssm64js], a native JavaScript port of the game.
 
-[Video 1, BiTDW](https://twitter.com/zackbanack/status/1311071508912107523)
+This project exists becauses of curisosity, a love for GameMaker, and the challenge of working under restrictions.
 
-[Video 2, Castle Lobby](https://twitter.com/zackbanack/status/1312137282103603201)
+## Notice
+___
+This repo does not contain any Super Mario 64 textures or sounds. A self-provided ROM, as well as a copy of the [sm64 decomp](https://github.com/n64decomp/sm64), is necessary in order to extract assets and play.
+
+### Community
+___
+[Join the Discord](https://discord.gg/6XfpZXt)
+
+## Compile Instructions (Windows, macOS)
+___
+1. Install the latest version of GameMaker Studio 2.3.1
+2. Follow the **US ROM VERSION** of the steps found on the [sm64 decomp repo](https://github.com/n64decomp/sm64)
+3. Clone the sm64.gml repo:
+```
+git clone https://github.com/zbanack/sm64gml.git && cd sm64gml
+```
+4. Open the .yyz project file and navigate to the `Create Event` of `Object1`. The first argument of the `sm64_init` function should be a string pointing to the output folder from Step 2.
+
+**Example:**
+```
+sm64_init(
+	"C:/Users/Zack/Desktop/sm64_decomp/", // <-- your 
+  ...
+);
+```
+
+5. Compile the game for **Windows** or **macOS**. It is *possible* to get the game to run in native JavaScript using the HTML5 export option, though you'll need to figure out what is being extracted from the ROM at run-time and manually insert that data into the source code (not recommended!!).
 
 
-## Setup
-1. Get a working copy of the [sm64 decomp repo](https://github.com/n64decomp/sm64).
-2. Grab the python scripts in the /pygml/ in this repo and place them into the sm64 decomp folder.
-3. ...
+## Python C->GML conversion tools
+___
 
-## Community
-discord / 6XfpZXt
+In order to speed up the process of converting C code to GML, this repo contains numerous python scripts in the /pygml/ folder. Regarding these scripts, please note the following:
+- The code extremely sloppy and full of spaghetti
+- The code works ~75% of the time, requiring manual changes
 
-## Frequently Asked Questions
-**Q: Who's leading the project?**
+### Prerequisites (Windows)
+- Python 3.5+ (3.8+ recommended)
+- [js-beautify](https://github.com/beautify-web/js-beautify) installed via pip
+```
+$ pip install jsbeautifier
+```
 
-A: Zack (http://twitter.com/zackbanack/) laid the early foundation of the project and is now extending development to the GameMaker community.
+Copy decomp-derived C code to your clipboard, run the script, and the script will try its best to convert to GML using sm64.gml-friendly functions. The result, if successful, will be copied to your clipboard.
 
-**Q: Where is the SM64 source code coming from?**
-
-A: The SM64 source code was reverse-engineered back to C via decompilation by some really smart people. The SM64 decomp repo is publically available on Github.
-
-**Q: What version of GameMaker are you using?**
-
-A: GameMaker Studio 2.3. Without lightweight objects/structs, the job would be significantly more difficult.
-
-**Q: Why GameMaker?**
-
-A: I like GameMaker and pushing its perceived limits.
-
-**Q: Are you keeping the glitches in?**
-
-A: Yep, look at backwards long jumping https://twitter.com/zackbanack/status/1289938841122615296
-
-**Q: What systems would this work on?**
-
-A: In theory, this could work all GameMaker Studio 2 export models (e.g. Windows, Mac, Linux, Switch, PS4, iPhone, Android, HTML5/JS, etc.).
+## Shoutouts
+___
+- [Super Mario 64 Decomp](https://github.com/n64decomp/sm64)
+- [sm64js](https://github.com/sm64js/sm64js)
+- [N64 Fast 3D Renderer](https://github.com/Emill/n64-fast3d-engine)
