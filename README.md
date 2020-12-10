@@ -50,6 +50,14 @@ $ pip install jsbeautifier
 
 Copy decomp-derived C code to your clipboard, run the script, and the script will try its best to convert to GML using sm64.gml-friendly functions. The result, if successful, will be copied to your clipboard.
 
+## Most Notable Issues
+- The game is extremely laggy. You'll be lucky to get ~20fps on Windows or macOS at the moment. Oddly enough, the HTML5 export module can hit 100fps+
+- The N64 rendering doesn't fully-work: z-fighting, blend modes, clamping, transparent polygons, and more need to be addressed
+- The movement engine is glitchy: wallkicks stutter, longjumps get eaten, body tilts are lacking
+- Only a handful of enemies have been coded
+- Only a few levels (see `sm64_init` for all current courses) are playable
+- Stars and progress recording/saving aren't implemented
+
 ## Shoutouts
 [Super Mario 64 Decomp](https://github.com/n64decomp/sm64)
 
