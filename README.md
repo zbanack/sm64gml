@@ -28,7 +28,7 @@ git clone https://github.com/zbanack/sm64gml.git && cd sm64gml
 **Example:**
 ```
 sm64_init(
-	"C:/Users/Zack/Desktop/sm64_decomp/", // <-- your 
+	"C:/Users/Zack/Desktop/sm64_decomp/", // <-- your dir
   ...
 );
 ```
