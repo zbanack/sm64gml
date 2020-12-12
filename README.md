@@ -116,3 +116,7 @@ Copy decomp-derived C code to your clipboard, run the script, and the script wil
 [N64 Fast 3D Renderer](https://github.com/Emill/n64-fast3d-engine)
 
  - Portions of this OpenGL implemention of Nintendo 64's graphics renderer were ported to GML for use in this project
+
+[Juju Adams' SHA1 GM Library](https://github.com/JujuAdams/protect-your-savefiles)
+
+ - Used to validate ROMs
