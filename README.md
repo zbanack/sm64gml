@@ -3,7 +3,7 @@
 WIP GameMaker Language port of Super Mario 64
 ___
 
-### Release Trailer
+### 🎬 Release Trailer
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/w983Es08IRM/0.jpg)](https://www.youtube.com/watch?v=w983Es08IRM)
 
