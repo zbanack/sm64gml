@@ -54,7 +54,7 @@ Copy decomp-derived C code to your clipboard, run the script, and the script wil
 
 ## Notable Issues
 - The game is extremely laggy. You'll be lucky to get ~20fps on Windows or macOS at the moment. Oddly enough, the HTML5 export module can hit 100fps+. Further investigation is needed.
-- Way WAY waaaay too many global variables.
+- Way WAY waaaay too many global variables. Let's make proper use of structs and scoping, eh?
 - The movement engine is glitchy: wallkicks stutter, longjumps get eaten, body tilts are lacking
 - Mario’s face is glitchy. That’s a result of other vertex-related issues that need to be fixed.
 - The N64 rendering doesn't fully-work: z-fighting (especially with texture decals), blend modes, clamping, transparent polygons, and more need to be addressed
@@ -92,16 +92,19 @@ Copy decomp-derived C code to your clipboard, run the script, and the script wil
 - Misc crashes related to not being able to locate floors/OOBs
 - Softocks for dying, collecting a star
 
-## Notes
-- The file structure and naming conventions (of folders and functions) resemble the C decomp repo more of the time than not. 
-- Comments reading “pygml” means at least part of the associated code derived from the tool
-- `Ptr.` is sm64.gml's equivalent of C pointers. Use this global object to hold or manipulate variables across functions and scopes
+## Controls
+- WASD move, Z to crouch, space to jump, arrow keys to move camera, X to punch
 - There is basic game pad support, and the gamepad *should* be auto-detected. You can re-map the controls in-code, no fancy menu or anything at the moment.
-- Look for `@TODO` in the source for code that isn't finished or issues that have been pushed under the rug. Similarly `@z` are notes to self about things that may need to be changed (or reverted back) in the future
 - Press P to toggle between using a hacky-implementation of delta timed movement
 - Hold Q to reveal debug info
 - Press shift to moon jump
 - Press R to return Mario to spawn coords
+
+## Notes
+- The file structure and naming conventions (of folders and functions) resemble the C decomp repo more of the time than not. 
+- Comments reading “pygml” means at least part of the associated code derived from the tool
+- `Ptr.` is sm64.gml's equivalent of C pointers. Use this global object to hold or manipulate variables across functions and scopes
+- Look for `@TODO` in the source for code that isn't finished or issues that have been pushed under the rug. Similarly `@z` are notes to self about things that may need to be changed (or reverted back) in the future
 - We may decide to opt for using structs/json instead of arrays for vertices, display lists, behavior commands, level commands, etc.
 
 ## Shoutouts
