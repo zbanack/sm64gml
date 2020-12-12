@@ -25,7 +25,7 @@ This repo does not contain any Super Mario 64 textures or sounds. A self-provide
 ```
 git clone https://github.com/zbanack/sm64gml.git && cd sm64gml
 ```
-4. Open the .yyz project file and navigate to the `Create Event` of `Object1`. The first argument of the `sm64_init` function should be a string pointing to the output folder from Step 2.
+4. In `/src/`, open the `.yyp` project file and navigate to the `Create Event` of `Object1`. The first argument of the `sm64_init` function should be a string pointing to the output folder from Step 2.
 
 **Example:**
 ```
@@ -38,7 +38,7 @@ sm64_init(
 5. Compile the game for **Windows** or **macOS**. It is *possible* to get the game to run in native JavaScript using the HTML5 export option, though you'll need to figure out what is being extracted from the ROM at run-time and manually insert that data into the source code (not recommended!!).
 
 
-## Python C->GML conversion tools
+## [Development] Python C->GML conversion tools
 In order to speed up the process of converting C code to GML, this repo contains numerous python scripts in the /pygml/ folder. Regarding these scripts, please note the following:
 - The code extremely sloppy and full of spaghetti
 - The code works ~75% of the time, requiring manual changes
