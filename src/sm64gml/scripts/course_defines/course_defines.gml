@@ -1,0 +1,38 @@
+// @z these may be wrong...
+#macro COURSE_NONE			(0x44444440)       
+#macro COURSE_BOB			(0x00022240)       
+#macro COURSE_WF			(0x00002040)       
+#macro COURSE_JRB			(0x22222240)       
+#macro COURSE_CCM			(0x00220040)       
+#macro COURSE_BBH			(0x22222240)       
+#macro COURSE_HMC			(0x22222240)       
+#macro COURSE_LLL			(0x21212140)       
+#macro COURSE_SSL			(0x20222240)       
+#macro COURSE_DDD			(0x22222240)       
+#macro COURSE_SL			(0x02020240)       
+#macro COURSE_WDW			(0x22102240)       
+#macro COURSE_TTM			(0x00000040)       
+#macro COURSE_THI			(0x11112140)       
+#macro COURSE_TTC			(0x22222240)       
+#macro COURSE_RR			(0x00000040)       
+#macro COURSE_BITDW			(0x34444440) 
+#macro COURSE_BITFS			(0x34444440) 
+#macro COURSE_BITS			(0x34444440) 
+#macro COURSE_PSS			(0x24444440) 
+#macro COURSE_COTMC			(0x44444440) 
+#macro COURSE_TOTWC			(0x04444440) 
+#macro COURSE_VCUTM			(0x24444440) 
+#macro COURSE_WMOTR			(0x04444440) 
+#macro COURSE_SA			(0x24444440) 
+#macro COURSE_CAKE_END		(0x44444440) 
+
+#macro COURSE_END			(COURSE_CAKE_END + 1)
+#macro COURSE_MAX			(COURSE_END - 1)
+#macro COURSE_COUNT 		(COURSE_MAX)
+#macro COURSE_MIN 			(COURSE_NONE + 1)
+
+#macro COURSE_CAP_COURSES	COURSE_COTMC
+
+#macro COURSE_BONUS_STAGES	(COURSE_RR+1) // @z?
+#macro COURSE_STAGES_MAX	(COURSE_BONUS_STAGES - 1)
+#macro COURSE_STAGES_COUNT	(COURSE_STAGES_MAX)	
