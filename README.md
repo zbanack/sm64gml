@@ -1,9 +1,11 @@
 # sm64.gml
 
 WIP GameMaker Language port of Super Mario 64
-
-🎬 **[Release Trailer](http://www.youtube.com/watch?v=w983Es08IRM)**
 ___
+
+### Release Trailer
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/w983Es08IRM/0.jpg)](https://www.youtube.com/watch?v=w983Es08IRM)
 
 ## The project
 sm64.gml is an early(-ish) **work in progress** port of Super Mario 64 to 100% vanilla GameMaker Language (GML) 2.3.1. GML is a part of YoYoGames' GameMaker Studio 2 development engine. This project is not affiliated with them in any way.
