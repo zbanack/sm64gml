@@ -6,7 +6,7 @@ ___
 ## The project
 sm64.gml is an early(-ish) **work in progress** port of Super Mario 64 to 100% vanilla GameMaker Language (GML) 2.3.1. GML is a part of YoYoGames' GameMaker Studio 2 development engine. This project is in not affiliated with them in any way.
 
-The C code that's being ported to GML comes from the [C decompilation repo](https://github.com/n64decomp/sm64). Certain portions of the GML also derive from [https://github.com/sm64js/sm64js](sm64js), a native JavaScript port of the game. **Zero (0%)** of GML in this project stemmed from leaks or illegally-obtained Super Mario 64 or related systems code. 
+The C code that's being ported to GML comes from the [C decompilation repo](https://github.com/n64decomp/sm64). Certain portions of the GML also derive from [sm64js](https://github.com/sm64js/sm64js), a native JavaScript port of the game. **Zero (0%)** of GML in this project stemmed from leaks or illegally-obtained Super Mario 64 or related systems code. 
 
 This project exists becauses of curisosity, a love for GameMaker, and the challenge of working under restrictions.
 
