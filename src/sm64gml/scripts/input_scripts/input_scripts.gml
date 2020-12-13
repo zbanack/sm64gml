@@ -167,7 +167,7 @@ function inputs_update() {
 		var gamepad = gamepads_in_use[i];
 		
 		// controller analog
-		if (gamepad!=null && gCurrentArea!=null) {
+		if (gamepad!=null) {
 			var hor, vert;
 			hor = ContInputs.CON_JR;
 			vert = ContInputs.CON_JD;
