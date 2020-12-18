@@ -14,11 +14,11 @@ The C code that's being ported to GML comes from the [C decompilation repo](http
 
 This project exists because of curiosity, a love for GameMaker, and the challenge of working under restrictions.
 
+## ⭐ Community
+[Join the Discord](https://discord.gg/6XfpZXt)
+
 ## ⚠️ Notice
 This repo does not contain any Super Mario 64 textures or sounds. A self-provided ROM, as well as a copy of the [sm64 decomp](https://github.com/n64decomp/sm64), is necessary in order to extract assets and play. **Zero (0%)** of GML in this project stemmed from leaks or illegally-obtained Super Mario 64 or related systems code. 
-
-### Community
-[Join the Discord](https://discord.gg/6XfpZXt)
 
 ## Compile Instructions (Windows, macOS)
 1. Install the latest version of GameMaker Studio 2.3.1
